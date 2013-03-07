@@ -1,0 +1,6 @@
+Thu, 07 Mar 2013 13:14:56 -0500
+doc/README_FOR_APP	Fri, 25 Jan 2013 16:10:15 -0500
+app/controllers/application_controller.rb	Fri, 25 Jan 2013 16:10:15 -0500
+app/controllers/verses_controller.rb	Wed, 06 Mar 2013 20:01:23 -0500
+app/helpers/application_helper.rb	Fri, 25 Jan 2013 16:10:15 -0500
+app/helpers/verses_helper.rb	Wed, 06 Mar 2013 19:47:20 -0500
