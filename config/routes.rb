@@ -1,6 +1,11 @@
 Ktwapp::Application.routes.draw do
-  get "verses/index"
+  root :to => 'pages#home'
+  get 'about' => 'pages#about'
+  get 'verses' => 'pages#verses'
 
+  #get "verses/index"
+  #get 'verses' => "verses/index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
