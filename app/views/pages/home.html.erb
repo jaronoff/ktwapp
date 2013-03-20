@@ -1,4 +1,9 @@
 <div class="hero-unit">
+	<% if user_signed_in? %>
+	<h1>You're logged in!</h1>
+	<p class="lead">Head over to <%= link_to "Verses", verses_path %> to do today's reading.</p>
+
+	<% else %>
 
 <h1>Read the entire Bible</h1>
 <h2>in 2 Years.</h2>
@@ -9,3 +14,6 @@
     <p> <%= link_to 'Sign up now!',  new_user_registration_path , class: "btn btn-large btn-success" %> </p>
 </div>
 <%= render 'layouts/benefits' %>
+
+<% end %>
+</div>
