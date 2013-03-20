@@ -4,8 +4,12 @@ $btnPrimaryBackground: purple;
 @import 'bootstrap';
 body{
     padding-top: 60px;
-}
+    
+    background-color: white;
+    background-size: 100%;
 
+}
+html, body { min-height: 100%; }
 
 @import 'bootstrap-responsive';
 
@@ -27,5 +31,10 @@ body{
 	}
 }
 .bsd {
-	
+	font-size: 20px;
+}
+.span4 {
+	h3,p {
+		color: gray;
+	}
 }
