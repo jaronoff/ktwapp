@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130317043825) do
+ActiveRecord::Schema.define(:version => 20130416004255) do
+
+  create_table "bible_studies", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "days", :force => true do |t|
+    t.integer  "week"
+    t.integer  "day"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -30,5 +42,13 @@ ActiveRecord::Schema.define(:version => 20130317043825) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "verses", :force => true do |t|
+    t.string   "book"
+    t.integer  "chapter"
+    t.integer  "verse"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

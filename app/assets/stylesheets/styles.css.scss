@@ -1,4 +1,4 @@
-$navbarBackgroundHighlight: white;
+$navbarBackgroundHighlight: gray;
 $navbarBackground: white;
 $btnPrimaryBackground: purple;
 @import 'bootstrap';
@@ -9,7 +9,11 @@ body{
     background-size: 100%;
 
 }
-html, body { min-height: 100%; }
+html, body { 
+	min-height: 100%; 
+	background-image:url('sky.jpg');
+	background-size: 100%
+}
 
 @import 'bootstrap-responsive';
 
@@ -17,9 +21,9 @@ html, body { min-height: 100%; }
 
 .footer{
     margin-top: 50px;
-    color: $grayLight;
+    color: $white;
     a{
-        color: $gray;
+        color: $white;
     }
 }
 .jumbotron {
@@ -35,6 +39,7 @@ html, body { min-height: 100%; }
 }
 .span4 {
 	h3,p {
-		color: gray;
+		color: white;
 	}
 }
+
