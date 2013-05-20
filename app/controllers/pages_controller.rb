@@ -6,5 +6,6 @@ class PagesController < ApplicationController
   end
 
    def verses
+   	@verses = Verse.where(book: 'Genesis',chapter: '2')
   end
 end

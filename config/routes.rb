@@ -4,6 +4,7 @@ Ktwapp::Application.routes.draw do
   root :to => 'pages#home'
   get 'about' => 'pages#about'
   get 'verses' => 'pages#verses'
+  get 'verses/index' =>'verses#index'
 
   #get "verses/index"
   #get 'verses' => "verses/index"

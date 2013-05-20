@@ -1,25 +1,22 @@
-<h1>Here's where the verses should go.</h1>
-<p>This is where the verses would be, booyeah!!</p>
+<h1>Verses</h1>
+<p>The verses are below.</p>
 
-<div class="tabbable tabs-left">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#lA" data-toggle="tab">Week 1</a></li>
-                <li class=""><a href="#lB" data-toggle="tab">Week 2</a></li>
-                <li class=""><a href="#lC" data-toggle="tab">Week 3</a></li>
-                <li class=""><a href="#lD" data-toggle="tab">Week 4</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="lA">
-                 <p>Week 1</p>
-                </div>
-                <div class="tab-pane" id="lB">
-                 <p>Week 2</p>
-                </div>
-                <div class="tab-pane" id="lC">
-                  <p>Week 3</p>
-                </div>
-                  <div class="tab-pane" id="lD">
-                  <p>Week 4</p>
-                </div>
-              </div>
-            </div>
+<table class="table table-hover">
+  <tr>
+    <th>Book</th>
+    <th>Chapter</th>
+    <th>Verse</th>
+    <th>Verse Text</th>
+    <th></th>
+  </tr>
+ 
+<%= @verses.each do |verse| %>
+  <tr>
+    <td><%= verse.book %></td>
+    <td><%= verse.chapter %></td>
+    <td><%= verse.verse %></td>
+        <td><%= verse.verse_text %></td>
+
+  </tr>
+<% end %>
+</table>
