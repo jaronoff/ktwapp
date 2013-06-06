@@ -1,1 +1,11 @@
 <h1>Verses</h1>
+
+ <div class="row-fluid">
+<% @verses.each do |verse| %>
+<p><%= verse.book %>  <%= verse.chapter %>:<%= verse.verse %> </p>
+<b><%= verse.verse_text %></b>
+
+
+
+    
+<% end %>

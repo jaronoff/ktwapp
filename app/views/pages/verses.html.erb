@@ -1,22 +1,14 @@
 <h1>Verses</h1>
 <p>The verses are below.</p>
 
-<table class="table table-hover">
-  <tr>
-    <th>Book</th>
-    <th>Chapter</th>
-    <th>Verse</th>
-    <th>Verse Text</th>
-    <th></th>
-  </tr>
- 
-<% @verses.each do |verse| %>
-  <tr>
-    <td><%= verse.book %></td>
-    <td><%= verse.chapter %></td>
-    <td><%= verse.verse %></td>
-        <td><%= verse.verse_text %></td>
 
-  </tr>
+ <div class="row-fluid">
+<% @verses.each do |verse| %>
+<p><%= verse.book %>  <%= verse.chapter %>:<%= verse.verse %> </p>
+<b><%= verse.verse_text %></b>
+
+
+
+    
 <% end %>
-</table>
+</div>

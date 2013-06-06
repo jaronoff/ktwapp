@@ -1,5 +1,9 @@
 class VersesController < ApplicationController
-  def index
-  	
+  def verses
+  	   	@verses = Verse.where(book: 'Genesis',chapter: '2',
+   												book: 'Mark',chapter: '4'
+
+
+   								)
   end
 end
