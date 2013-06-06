@@ -25,11 +25,13 @@ task :import => :environment do
 
   	#puts [book, chapter, verse, verse_text]
 
-  	Verse.create ({
-        :book => book, 
-        :chapter => chapter,
-        :verse => verse})
-    
+    verse = Verse.where(:book => book, 
+                        :chapter => chapter,
+                        :verse => verse).first_or_initialize
+
+    verse.verse_text = verse_text
+
+    verse.save   
 
   end
 end
